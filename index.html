@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zainab Memon's Leadership Certificate ePortfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #13294b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      background-color: #e84a27;
+    }
+
+    nav a {
+      padding: 15px 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #c93d1e;
+    }
+
+    section {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    h2 {
+      border-bottom: 2px solid #e84a27;
+      padding-bottom: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #13294b;
+      color: white;
+    }
+
+    li {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      margin-bottom: 20px;
+      list-style-type: disc;
+    }
+
+    li.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 175px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      padding: 15px 20px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #e84a27;
+      min-width: 100%;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      display: block;
+      text-decoration: none;
+      width: 100%;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #c93d1e;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu .submenu-content {
+      display: none;
+      position: absolute;
+      left: 100%;
+      top: 0;
+      background-color: #13294b;
+      min-width: 200px;
+      z-index: 1;
+    }
+
+    .dropdown-submenu:hover .submenu-content {
+      display: block;
+    }
+
+    .submenu-content a {
+      padding: 12px 16px;
+      color: white;
+      display: block;
+      text-decoration: none;
+    }
+
+    .submenu-content a:hover {
+      background-color: #575757;
+    }
+
+    .fade-block {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .fade-block.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 20px;
+      }
+
+      nav a {
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      h2,
+      h3,
+      h4 {
+        font-size: 1.2em;
+      }
+
+      body {
+        font-size: 16px;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+
+    @media (max-width: 725px) {
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="top-bar">
+    <header>
+      <h1>Illinois Leadership Certificate Journey</h1>
+    </header>
+
+    <nav>
+      <div class="dropdown">
+        <a href="#about-me" class="dropbtn">About Me ▾</a>
+        <div class="dropdown-content">
+          <a href="#resume">Resume</a>
+        </div>
+      </div>
+      <a href="#personal-development-plan">Personal Development Plan</a>
+      <a href="#timeline">Timeline</a>
+      <div class="dropdown">
+        <a href="#reflection" class="dropbtn">Reflection ▾</a>
+        <div class="dropdown-content">
+          <a href="#leadership-workshops">Leadership Workshops</a>
+
+          <div class="dropdown-submenu">
+            <a href="#leadership-competencies">Leadership Competencies</a>
+            <div class="submenu-content">
+              <a href="#self-management">Self-Management</a>
+              <a href="#openness">Openness</a>
+              <a href="#communication">Communication</a>
+              <a href="#group-dynamics">Group Dynamics</a>
+            </div>
+          </div>
+          <a href="#overall-experience">Overall Experience</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <section id="about-me">
+    <h2>About Me</h2>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+      <div style="flex: 1 1 60%; min-width: 250px;">
+        <p>Hello! My name is Zainab Memon and I'm from Champaign, Illinois. I am a junior in Computer Engineering with a
+          minor in Mathematics and am interested in specializing in cybersecurity. I enrolled in the Leadership
+          Certificate Program in the spring of my sophomore year because I'm passionate about developing effective
+          leadership skills to drive positive change in any situation. I believe in empowering teams and fostering
+          environments where everyone can thrive, and I see leadership as the crucial catalyst for making that happen.
+        </p>
+        <p>For me, leadership isn't just about giving directions or being in charge. It's about inspiring a shared
+          vision and empowering others to contribute their unique strengths. I've always been drawn to the idea of
+          bringing people together, whether it's through collaborative projects or community initiatives. I've seen
+          firsthand how a supportive leader can transform a group of individuals into a cohesive, high-performing team,
+          capable of achieving far more than they could alone. This desire to uplift and enable others is what truly
+          drives my interest in leadership. It's about building strong relationships, fostering an inclusive atmosphere,
+          and ultimately, creating a ripple effect of positive impact.</p>
+      </div>
+      <div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
+        <a href="https://www.linkedin.com/in/zainabmmemon/">
+          <img src="assets/headshot.jpeg" alt="Zainab Memon headshot"
+            style="width: 100%; max-width: 250px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" />
+        </a>
+      </div>
+    </div>
+    <h3 id="resume">Resume</h3>
+    <p>For a summary of my academic background, leadership roles, and technical experience, please see my resume below.
+    </p>
+    <iframe src="assets/Resume - Zainab Memon.pdf" width="100%" height="600px" style="border: none;"></iframe>
+  </section>
+
+  <section id="personal-development-plan">
+    <h2>Personal Development Plan</h2>
+    <p>Guided by reflection and intention, my development plan outlines the leadership goals I set for myself as part of
+      this program. It captures my values, growth priorities, and the strategies I’m using to become a more thoughtful
+      and effective leader.</p>
+    <iframe src="assets/Personal Development Plan.pdf" width="100%" height="600px" style="border: none;"></iframe>
+  </section>
+
+  <section id="timeline">
+    <h2>Timeline</h2>
+    <ul>
+      <li><strong>Spring 2025 Semester:</strong> Leadership Development Course
+        <p>The leadership course I took was ENG377: Pedagogy & Mentoring for ELAs (Engineering Learning Assistants),
+          taught by Kimberely Powers. This course served as preparation for my Fall 2025 role leading a section of
+          ENG100 for freshmen, where I will introduce them to Grainger College of Engineering and the ECE Department.
+        </p>
+        <p>Below is a sample of my coursework, in which I reflect on my top two CliftonStrengths and explore how to
+          apply them in my ELA role. </p>
+        <iframe src="assets/Sample of Work.pdf" width="100%" height="600px" style="border: none;"></iframe>
+      </li>
+
+      <li><strong>Spring 2025 Semester:</strong> Co-Curricular Team Experience
+        <p>Through my role as Publicity Team Chair for the Electrical and Computer Engineering Student Advancement
+          Committee, I’ve learned that leadership is not about directing every move but fostering collaboration and
+          creating an environment where team members feel heard and empowered. I was responsible for overseeing tasks
+          like designing posts for Instagram, advertising on the TVs in the ECE building, and working on the committee’s
+          new website. These projects required careful coordination with other subcommittees and individual team members
+          to ensure alignment with our goals and deadlines.</p>
+        <p>I learned that leadership often involves balancing multiple perspectives, considering how to engage the
+          broader ECE student body, and encouraging team members to bring their ideas forward. Rather than simply making
+          decisions myself, I worked to guide the team toward solutions by facilitating discussions and providing
+          support when needed.</p>
+        <p>One of the most challenging aspects of my role was managing the creation of our new website, which involved
+          shifting relevant content from the old website while ensuring that the new site aligned with the committee’s
+          goals and vision. The transition presented several obstacles, including understanding the technical details of
+          website design and managing the coordination of team members responsible for different sections. At the same
+          time, there was pressure to ensure that the old content didn’t get lost, so I had to stay on top of every
+          update and maintain a clear communication loop within the team.</p>
+        <p>I navigated this challenge by staying organized and breaking the tasks into smaller, manageable steps. I
+          created a project timeline and delegated specific content migration tasks to team members based on their
+          strengths, while I focused on ensuring that the overall look and feel of the website aligned with our
+          branding. By being clear in communication and flexible with deadlines, we were able to successfully launch the
+          new site. This experience taught me that leadership requires patience and the ability to adapt when things
+          don’t go as planned.</p>
+      </li>
+
+      <li><strong>January 30, 2025:</strong> Clifton Strengths Workshop
+        <p>The CliftonStrengths workshop gave me valuable insights into my natural talents and how I can leverage them
+          in my academic, professional, and personal life. Learning that my top strengths are Harmony, Relator, Empathy,
+          Deliberative, and Consistency helped me understand why I prioritize collaboration, deep connections, and
+          thoughtful decision-making.</p>
+        <p>One key takeaway was recognizing how my strengths shape my leadership style. Harmony and Relator make me
+          adept at fostering inclusive environments, ensuring everyone feels heard and valued. Empathy enhances my
+          ability to support others, while Deliberative and Consistency enable me to make careful, fair decisions. These
+          qualities will be especially useful as I take on leadership roles, such as in the ECE Student Advancement
+          Committee, Illinois Student Council, and beyond, where I’ll need to balance different perspectives and execute
+          plans effectively.</p>
+        <p>Moving forward, I will focus on refining these strengths to become a more intentional leader and team member.
+          By embracing my natural tendencies while also pushing myself to take risks, I can create meaningful
+          connections, foster collaboration, and ensure that my contributions have a lasting impact.</p>
+      </li>
+
+      <li><strong>March 12, 2025:</strong> Leading with Empathy and Compassion Workshop
+        <p>The workshop deepened my understanding of the nuances between pity, sympathy, empathy, and compassion. I
+          learned that while pity and sympathy create distance, true empathy fosters connection by allowing us to
+          understand and share another’s emotions. Compassion goes a step further, combining empathy with action. This
+          distinction reinforced the importance of not just feeling for others but actively supporting them.</p>
+        <p>Additionally, I learned that while active listening focuses on comprehension and response, empathetic
+          listening prioritizes understanding emotions and validating experiences. This skill is crucial in leadership,
+          as it builds trust and meaningful relationships. I will apply these insights in my leadership roles by
+          practicing empathetic listening with my peers and taking proactive steps to support those in need by creating
+          an environment where people feel heard and valued.</p>
+      </li>
+
+      <li><strong>April 14, 2025:</strong> Leading With Integrity Leadership Lab
+        <p>This program has been a meaningful experience that challenged me to think deeply about ethics, integrity, and
+          the kind of leader I want to be. I appreciated the opportunity to reflect on real-life dilemmas and learn
+          practical frameworks for making values-based decisions. Overall, it gave me tools and insights that I’ll carry
+          forward in both personal and leadership settings.</p>
+      </li>
+
+      <li><strong>April 16, 2025:</strong> Strengths Based Leadership Lab
+        <p>My experience in the Strengths Based Leadership Lab was incredibly insightful and empowering. I learned how
+          to identify and apply my unique strengths in team settings, which helped me better understand my leadership
+          style and how to collaborate effectively with others. The interactive activities and reflections challenged me
+          to grow both personally and professionally.</p>
+      </li>
+      <li><strong>Summer 2025:</strong> Began developing this ePortfolio to reflect on and share my Leadership
+        Certificate journey.
+        <p>Creating this was an incredible opportunity to combine my technical skills with personal reflection. It
+          allowed me to thoughtfully document my growth, synthesize key takeaways from the program, and present my
+          leadership development in a way that feels both meaningful and authentic.</p>
+      </li>
+      <!-- Fall 2025: will complete remaining two workshops -->
+    </ul>
+  </section>
+
+  <section id="reflection">
+    <h2>Reflection</h2>
+    <div class="fade-block">
+      <h3 id="leadership-workshops">Leadership Workshops</h3>
+      <!-- Write a reflection to synthesize your experience and explain how you will apply what 
+      you have learned from the workshops to your future endeavors. (200- 300 words total) -->
+      <p>Coming soon</p>
+    </div>
+    <div class="fade-block">
+      <h3 id="leadership-competencies">Leadership Competencies</h3>
+    </div>
+    <div class="fade-block">
+      <h4 id="self-management">Self-Management</h4>
+      <p> Through the program, I developed stronger self-awareness and strategies for managing my time, energy,
+        and emotions. I learned to set clear goals, prioritize tasks, and stay grounded under pressure.
+        Reflection activities helped me identify patterns in my behavior and adjust my habits to align better
+        with my values and responsibilities. I became more intentional about how I approach challenges and how
+        I hold myself accountable. Building resilience, setting boundaries, and practicing mindfulness all
+        contributed to my growth. I now feel more in control of my actions and better equipped to navigate
+        stress, maintain focus, and lead with consistency and purpose. </p>
+    </div>
+    <div class="fade-block">
+      <h4 id="openness">Openness</h4>
+      <p>I have become more open to feedback as a tool for growth rather than criticism. Instead of reacting
+        defensively, I now listen to understand and reflect on how I can improve. Receiving feedback,
+        especially the difficult kind, has helped me recognize blind spots, challenge assumptions, and
+        strengthen my skills. I’ve learned to welcome different perspectives, ask clarifying questions,
+        and apply insights constructively. This mindset shift has made me more adaptable, humble, and
+        self-aware. By embracing feedback as a continuous learning opportunity, I have grown not only in
+        confidence but also in my ability to lead with empathy and a willingness to evolve.</p>
+    </div>
+    <div class="fade-block">
+      <h4 id="communication">Communication</h4>
+      <p>The program helped me develop more intentional, clear, and empathetic communication habits.
+        Whether participating in workshops or team discussions, I practiced articulating my ideas
+        more concisely and listening actively to others. The focus on empathetic listening in particular
+        improved how I respond to and validate different viewpoints. I also became more mindful of
+        nonverbal communication and the importance of aligning words with intent. These experiences
+        have strengthened my ability to build trust, resolve conflicts, and foster open dialogue in
+        group settings. Overall, I have become more confident in my communication and better equipped
+        to lead with clarity and connection.</p>
+    </div>
+    <div class="fade-block">
+      <h4 id="group-dynamics">Group Dynamics</h4>
+      <p>Participating in group-based workshops and leadership activities gave me insight into how effective group
+        dynamics shape collaboration. I learned how to observe and respond to different team roles, mediate conflicting
+        perspectives, and align team efforts toward shared goals. By fostering inclusive environments where all members
+        felt valued, I improved my ability to facilitate collaboration and manage challenges with sensitivity and
+        structure. These experiences taught me that strong group dynamics require trust, clear roles, and mutual
+        accountability. I now approach team settings with the mindset of a facilitator, aiming to empower others while
+        ensuring cohesion, productivity, and shared responsibility.</p>
+      <p></p>
+    </div>
+    <div class="fade-block">
+      <h3 id="overall-experience">Overall Experience</h3>
+      <p>The Leadership Certificate experience has been a steady process of discovery. It pushed me to reflect, adapt,
+        and grow. Early on, I expected to learn techniques or best practices. Instead, I found myself returning to the
+        fundamentals: who I am, how I show up, and what kind of impact I want to have on others. The program became a
+        space to question assumptions I held about leadership, including the idea that it is something you are granted
+        through a title or role. I began to see leadership as something you cultivate day by day, moment by moment,
+        through your presence, decisions, and relationships.</p>
+      <p>One of the most meaningful parts of the experience was receiving feedback, both formally and informally.
+        I realized how rarely we give each other honest, constructive insights. At first, I felt defensive. But
+        over time, I grew to appreciate how feedback can be a gift, allowing me to try again and improve. It
+        helped me notice habits I had not questioned and guided me toward better alignment between my intentions
+        and impact. A challenge I faced was figuring out how to apply what I was learning in real time, especially
+        when stakes felt high or uncertain. But even in moments of failure or conflict, I could feel the skills
+        taking root. I started pausing before reacting, checking in with others, and staying open to dialogue.
+        Small practices like active listening or naming assumptions began to shift the way I operated in group
+        settings. I learned to value not just results, but relationships; not just outcomes, but how we get there.
+      </p>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+        <div style="flex: 1 1 60%; min-width: 250px;">
+          <p>Looking back, I think of this journey as assembling a puzzle. Each conversation, reflection, or challenge
+            added a piece. Some pieces were uncomfortable, like confronting my fear of conflict or my tendency to
+            over-function in teams, but they were necessary to understand the bigger picture. The puzzle remains a
+            work in progress. Not because it’s unfinished in a frustrating way, but because leadership is something
+            I will continue piecing together and growing throughout my life. This program helped me find the corner
+            pieces: the core values, practices, and questions that will guide me no matter where I go. From here, I
+            feel equipped to keep building with intention, humility, and a clearer sense of purpose.</p>
+        </div>
+        <div style="flex: 1 1 30%; min-width: 200px; text-align: center;">
+          <img src="assets/puzzle.jpg" alt="Incomplete puzzle with border mainly filled"
+            style="width: 100%; max-width: 250px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" />
+          </a>
+        </div>
+      </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 <a href="https://www.linkedin.com/in/zainabmmemon/" target="_blank"
+        style="color: #ffffff;text-decoration: none;">Zainab Memon</a> | Illinois Leadership Certificate Program </p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    const listItems = document.querySelectorAll('#timeline li');
+    const fadeBlocks = document.querySelectorAll('.fade-block');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    sections.forEach(section => observer.observe(section));
+    listItems.forEach(li => observer.observe(li));
+    fadeBlocks.forEach(block => observer.observe(block));
+
+  </script>
+</body>
+
+</html>
